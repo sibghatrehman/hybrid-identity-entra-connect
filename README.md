@@ -1,5 +1,5 @@
 # Hybrid Identity Lab — On-Prem AD to Microsoft Entra ID
-
+![HybridIdentity](HybridIdentityLab_TopologyDiagram.png)
 Extends an existing on-premises Active Directory home lab into a hybrid identity environment by syncing on-prem users to Microsoft Entra ID (formerly Azure AD) using Microsoft Entra Connect.
 
 **Companion repo:** this builds directly on [[https://github.com/sibghatrehman/Active-Directory-Home-Lab](https://github.com/sibghatrehman/Active-Directory-Home-Lab.git)]— same domain controller, same OU structure, same users. This repo covers everything added on top: the sync server, the Entra ID tenant, and identity sync/verification.
@@ -73,7 +73,12 @@ Removed the membership again after setup completed — Enterprise Admins is only
 
 ## Screenshots
   Screenshots are added in the REPO for the references and results. 
-
+  ![HybridIdentity](AD_EnterpriseAdminAccess.png)
+  ![HybridIdentity](Get_ADSyncScheduler.png)
+  ![HybridIdentity](Users_OnPremisesSynced.png)
+  ![HybridIdentity](ADDS_User_LoggedinAzure.png)
+  ![HybridIdentity](SyncErrors_EntraConnectHealth.png)
+  
 ## Skills Demonstrated
 
 `Microsoft Entra ID` · `Entra Connect / Hybrid Identity` · `Password Hash Synchronization` · `Active Directory (Enterprise Admins, forest-level administration)` · `PowerShell (ADSync module)` · `Least-Privilege Access Management` · `MFA Configuration` · `Troubleshooting`
